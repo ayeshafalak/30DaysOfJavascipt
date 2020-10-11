@@ -10,55 +10,90 @@
 
   <div class="keys">
     <div data-key="65" class="key">
-      <kbd>A</kbd>
+      <button onclick="af()">A</button>
       <span class="sound">clap</span>
     </div>
     <div data-key="83" class="key">
-      <kbd>S</kbd>
+      <kbd onclick="sf()">S</kbd>
       <span class="sound">hihat</span>
     </div>
     <div data-key="68" class="key">
-      <kbd>D</kbd>
+      <kbd onclick="df()">D</kbd>
       <span class="sound">kick</span>
     </div>
     <div data-key="70" class="key">
-      <kbd>F</kbd>
+      <kbd onclick="ff()">F</kbd>
       <span class="sound">openhat</span>
     </div>
     <div data-key="71" class="key">
-      <kbd>G</kbd>
+      <kbd onclick="gf()">G</kbd>
       <span class="sound">boom</span>
     </div>
     <div data-key="72" class="key">
-      <kbd>H</kbd>
+      <kbd onclick="hf()">H</kbd>
       <span class="sound">ride</span>
     </div>
     <div data-key="74" class="key">
-      <kbd>J</kbd>
+      <kbd onclick="jf()">J</kbd>
       <span class="sound">snare</span>
     </div>
     <div data-key="75" class="key">
-      <kbd>K</kbd>
+      <kbd onclick="kf()">K</kbd>
       <span class="sound">tom</span>
     </div>
     <div data-key="76" class="key">
-      <kbd>L</kbd>
+      <kbd onclick="lf()">L</kbd>
       <span class="sound">tink</span>
     </div>
   </div>
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="65" src="sounds/clap.wav" id="a"></audio>
+  <audio data-key="83" src="sounds/hihat.wav" id="s"></audio>
+  <audio data-key="68" src="sounds/kick.wav" id="d"></audio>
+  <audio data-key="70" src="sounds/openhat.wav" id="f"></audio>
+  <audio data-key="71" src="sounds/boom.wav" id="g"></audio>
+  <audio data-key="72" src="sounds/ride.wav" id="h"></audio>
+  <audio data-key="74" src="sounds/snare.wav" id="j"></audio>
+  <audio data-key="75" src="sounds/tom.wav" id="k"></audio>
+  <audio data-key="76" src="sounds/tink.wav" id="l"></audio>
 
 <script>
-
+function af()
+{
+  document.getElementById("a").play();
+}
+function sf()
+{
+  document.getElementById("s").play();
+}
+function df()
+{
+  document.getElementById("d").play();
+}
+function ff()
+{
+  document.getElementById("f").play();
+}
+function gf()
+{
+  document.getElementById("g").play();
+}
+function hf()
+{
+  document.getElementById("h").play();
+}
+function jf()
+{
+  document.getElementById("j").play();
+}
+function kf()
+{
+  document.getElementById("k").play();
+}
+function lf()
+{
+  document.getElementById("l").play();
+}
 </script>
 
 
